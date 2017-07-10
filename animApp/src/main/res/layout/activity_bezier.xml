@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mj.animapp.anim.BezierLayoutBear xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/AnmiView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rlRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/llLeftRate"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/ic_index_abattoir_bg_rate_left"
+            android:orientation="vertical"
+            android:paddingBottom="3dp">
+
+            <TextView
+                android:text="点击我出动画"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:layout_weight="1" />
+
+            <RelativeLayout
+                android:id="@+id/rlzhangBean"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/ivExceedBean"
+                    android:layout_width="30dp"
+                    android:layout_height="27dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="22dp"
+                    android:src="@drawable/ic_common_src_bean" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llRightRate"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ic_index_abattoir_bg_rate_right"
+            android:orientation="vertical"
+            android:paddingBottom="3dp"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <RelativeLayout
+                android:id="@+id/rlDieBean"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/ivNoExceedBean"
+                    android:layout_width="30dp"
+                    android:layout_height="27dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="22dp"
+                    android:src="@drawable/ic_common_src_bean" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rlMyBean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/ic_index_abattoir_bg_gray"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:id="@+id/ivBean"
+            android:layout_width="30dp"
+            android:layout_height="27dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:src="@drawable/ic_common_src_bean" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/ivBean"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvMyBean"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的奖励"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvBeanNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvMyBean"
+                android:layout_below="@+id/tvMyBean"
+                android:minWidth="30dip"
+                android:text="----"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</com.mj.animapp.anim.BezierLayoutBear>

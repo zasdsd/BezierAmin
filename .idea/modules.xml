@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BezierAmin.iml" filepath="$PROJECT_DIR$/BezierAmin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/animApp/animApp.iml" filepath="$PROJECT_DIR$/animApp/animApp.iml" />
+    </modules>
+  </component>
+</project>
